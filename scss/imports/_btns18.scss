@@ -1,0 +1,22 @@
+%btn {
+    @include opinion-button(150px);
+    background-color: green;
+    @include button_shadow($button_shadow);
+
+}
+
+
+.btn-like{
+    @extend %btn;
+    background-color: green;
+}
+.btn-dislike{
+    @extend %btn;
+    background-color: red;
+}
+
+.btn-ok {
+    @extend %btn;
+    background-color: blue;
+    float: right;
+}

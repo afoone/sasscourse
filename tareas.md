@@ -96,6 +96,23 @@
 
 ## Tarea 16
 - Sustituir el mixin en los botones por @extend (dislike extendera a like)
-- Comprbar el css generado y ver las diferencias
+- Comprobar el css generado y ver las diferencias
+
+## Tarea 17
+- Meter todo el elemento quote dentro de un div de clase *content*
+- Sobre ese div, poner un tag *nav* de clase *header*. Por el momento le pondremos de contenido un lorem o *navegación*
+- Copiamos un par de veces el elemento de clase quote, uno detrás de otro, siempre dentro del *content*
+- Tras estos divs creamos un botón de claso btn-ok
+- En el sass, ponemos el elemento *.quote*  dentro del elemento *.content*
+- Reestructurar los botones de forma que crearemos un elemento *placeholder* **%btn%** de los cuales van a heredar, tanto los botones existentes como la nueva clase btn-ok, que será flotante a la derecha y azul. Pondrá "Aceptar", aunque no haga nada. Para ello haremos:
+  - El import de los botones lo pondremos a nivel de content (Sino no podremos heredarlo, no se pueden heredar 'hijos' a un 'padre)
+  - Creamos el %btn a partir del mixin
+  - Heredamos para crear los trres objetos.
+
+## Tarea 18
+- Para probar la herencia le pondremos una sombra a *%btn*, con una variable y usando el mixin.
+
+
+
 
 

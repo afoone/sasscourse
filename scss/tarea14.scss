@@ -1,36 +1,8 @@
-// Variables
-$author_color: brown;
-$quote_background: lightgrey;
-$quote_shadow: 10px 7px 18px 0px rgba(0,0,0,0.75);
-$quote_spaces: (padding: 2.5em,  margin: 2.5em);
-
-// Functions 
-@function calculate_button_height($width) {
-    @return $width*40px/130px;
-}
-
-@function calculate_radius($width){
-    @return calculate_button_height($width)/2;
-}
-
+// Variables y funciones
+@import 'imports/variables14', 'imports/functions14';
 // Mixins
-@mixin opinion-button($anchura, $color: white) {
-    color: $color;
-    width: $anchura;
-    height: calculate_button_height($anchura);
-    border-radius: calculate_radius($anchura);
-    font: { 
-        size: 0.9em;
-        weight: bold;
-        family: Verdana, Geneva, Tahoma, sans-serif;
-    }
-}
-
-@mixin button_shadow ($shadow){
-    -webkit-box-shadow: $shadow;
-    -moz-box-shadow: $shadow;
-    box-shadow: $shadow;
-}
+@import 'imports/mixins14';
+ 
 
  
 
@@ -59,6 +31,7 @@ $quote_spaces: (padding: 2.5em,  margin: 2.5em);
         }
     }
     p {
+        color: complement($author_color);
         font: {
             style: italic;
         }

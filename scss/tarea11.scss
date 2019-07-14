@@ -3,17 +3,18 @@ $author_color: brown;
 $quote_background: lightgrey;
 $quote_shadow: 10px 7px 18px 0px rgba(0,0,0,0.75);
 $quote_spaces: (padding: 2.5em,  margin: 2.5em);
+$button_width: 180px;
 
 // Functions 
 @function calculate_button_height($width) {
-    @return #{$width*40px/130px}px;
+    @return $width*40px/130px;
 }
 
 // Mixins
 @mixin opinion-button($radio, $color: white) {
     color: $color;
-    width: 180px;
-    height: calculate_button_height(180);
+    width: $button_width;
+    height: calculate_button_height($button_width);
     border-radius: $radio;
     font: { 
         size: 0.9em;

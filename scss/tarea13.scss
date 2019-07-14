@@ -1,16 +1,19 @@
 // Variables
 $author_color: brown;
 $quote_background: lightgrey;
-$quote_shadow: 10px 7px 18px 0px rgba(0,0,0,0.75);
+$quote_shadow_color: darken($author_color, 20%);
+$quote_shadow_size: 10px 7px 18px 0px;
+$quote_shadow: append($quote_shadow_size, $quote_shadow_color);
 $quote_spaces: (padding: 2.5em,  margin: 2.5em);
+
 
 // Functions 
 @function calculate_button_height($width) {
-    @return $width*40px/130px;
+    @return ceil($width*40px/130px);
 }
 
 @function calculate_radius($width){
-    @return calculate_button_height($width)/2;
+    @return floor( calculate_button_height($width)/2);
 }
 
 // Mixins
@@ -22,7 +25,7 @@ $quote_spaces: (padding: 2.5em,  margin: 2.5em);
     font: { 
         size: 0.9em;
         weight: bold;
-        family: Verdana, Geneva, Tahoma, sans-serif;
+        family: Verdana, Geneva, Tahoma, sans-serif; 
     }
 }
 
@@ -59,6 +62,7 @@ $quote_spaces: (padding: 2.5em,  margin: 2.5em);
         }
     }
     p {
+        color: complement($author_color);
         font: {
             style: italic;
         }

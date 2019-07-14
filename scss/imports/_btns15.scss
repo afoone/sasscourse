@@ -1,0 +1,8 @@
+.btn-like{
+    @include opinion-button(150px);
+    background-color: green;
+}
+.btn-dislike{
+    @include opinion-button(150px);
+    background-color: red;
+}

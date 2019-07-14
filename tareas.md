@@ -75,4 +75,27 @@
 ## Tarea 12 
  - Hacer otra función para que el botón siempre sea de borde redondo (radio la mitad de la altura), cambiando el mixin para que acepte tan sólo el ancho y ya haga todo lo demás
 
+ ## Tarea 13
+ - Usar built-in functions para:
+   - Devolver un número entero en las funciones, redondeado hacia arriba en una ocasión y hacia abajo en otra
+   - El color de la sombra se basará en un tono más oscuro (20%) del color del texto del autor. Este color se almacenará en una variable y luego se añadirá a la lista de propiedades shadow
+   - El color de la cita será el complementario del color del autor
+
+# IMPORTS
+
+## Tarea 14
+- Crear un directorio imports
+- Crear 'variables14.scss y mixins14.scss" y vamos a extraer en ellos nuestras variables y nuestros mixins.
+- Importarlos: ojo hay que tener en cuenta la posición.
+
+## Tarea 15
+- Extraer los tipos de botones a un fichero *_btns.scss*
+- Ver cómo conserva el anidamiento
+
+# EXTENDS
+
+## Tarea 16
+- Sustituir el mixin en los botones por @extend (dislike extendera a like)
+- Comprbar el css generado y ver las diferencias
+
 

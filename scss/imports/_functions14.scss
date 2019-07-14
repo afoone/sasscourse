@@ -1,0 +1,8 @@
+// Functions 
+@function calculate_button_height($width) {
+    @return ceil($width*40px/130px);
+}
+
+@function calculate_radius($width){
+    @return floor( calculate_button_height($width)/2);
+}

@@ -1,7 +1,7 @@
 .quote {
-  -webkit-box-shadow: 10px 7px 18px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 10px 7px 18px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 10px 7px 18px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 7px 18px 0px #541515;
+  -moz-box-shadow: 10px 7px 18px 0px #541515;
+  box-shadow: 10px 7px 18px 0px #541515;
   padding: 2.5em;
   margin: 2.5em;
   background-color: lightgrey;
@@ -17,22 +17,16 @@
       .quote h1 a:hover {
         color: darkgreen; }
   .quote p {
+    color: #2aa5a5;
     font-style: italic; }
-  .quote .btn-like {
+  .quote .btn-like, .quote .btn-dislike {
     color: white;
     width: 150px;
-    height: 46.15385px;
-    border-radius: 23.07692px;
+    height: 47px;
+    border-radius: 23px;
     font-size: 0.9em;
     font-weight: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: green; }
   .quote .btn-dislike {
-    color: white;
-    width: 150px;
-    height: 46.15385px;
-    border-radius: 23.07692px;
-    font-size: 0.9em;
-    font-weight: bold;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: red; }

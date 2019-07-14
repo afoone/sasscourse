@@ -1,0 +1,17 @@
+@mixin opinion-button($anchura, $color: white) { 
+    color: $color;
+    width: $anchura;
+    height: calculate_button_height($anchura);
+    border-radius: calculate_radius($anchura);
+    font: { 
+        size: 0.9em;
+        weight: bold;
+        family: Verdana, Geneva, Tahoma, sans-serif; 
+    }
+}
+
+@mixin button_shadow ($shadow){
+    -webkit-box-shadow: $shadow;
+    -moz-box-shadow: $shadow;
+    box-shadow: $shadow;
+}

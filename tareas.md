@@ -112,6 +112,45 @@
 ## Tarea 18
 - Para probar la herencia le pondremos una sombra a *%btn*, con una variable y usando el mixin.
 
+## CONTROL DE FLUJO 
+
+## Tarea 19
+- Creamos un estilo para NAV, con un shadow, un background color y una fuente y un tamaño. Pistas:
+```css
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+```
+- Poner en el html , bajo el *nav* la lista desordenada con las entradas de menú.
+- Modificarlo para crear un estilo *dark* y otro estilo *light*, con if .. else. Necesitaremos una variable $dark que sea boleana
+
+
+## Tarea 20
+- Cambiamos los objetos de clase quotes por tag li y los metemos dentro de un ul
+- Necesitaremos eliminar el punto, con `list-style-type: none;`
+- Usaremos for para cambiar el color de fondo de cada quote, cada vez más claro, de tre en tres
+
+
 
 
 

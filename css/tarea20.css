@@ -1,0 +1,73 @@
+nav {
+  /* Change the link color to #111 (black) on hover */ }
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #eee; }
+  nav li {
+    float: left; }
+  nav li a {
+    display: block;
+    color: darkblue;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none; }
+  nav li a:hover {
+    background-color: #ccc; }
+
+.content li:nth-child(3n + 1) {
+  background-color: lightgray; }
+
+.content li:nth-child(3n + 2) {
+  background-color: #e5e5e5; }
+
+.content li:nth-child(3n + 3) {
+  background-color: #f7f7f7; }
+
+.content .quote {
+  -webkit-box-shadow: 10px 7px 18px 0px #541515;
+  -moz-box-shadow: 10px 7px 18px 0px #541515;
+  box-shadow: 10px 7px 18px 0px #541515;
+  list-style-type: none;
+  padding: 2.5em;
+  margin: 2.5em;
+  background-color: lightgrey;
+  text-align: center; }
+  .content .quote h1 {
+    color: brown;
+    font-family: 'Lucida Sans', Verdana, sans-serif;
+    font-size: 1.5em;
+    font-variant: small-caps;
+    font-weight: 600; }
+    .content .quote h1 a {
+      color: brown; }
+      .content .quote h1 a:hover {
+        color: darkgreen; }
+  .content .quote p {
+    color: #2aa5a5;
+    font-style: italic; }
+
+.content .btn-like, .content .btn-dislike, .content .btn-ok {
+  color: white;
+  width: 150px;
+  height: 47px;
+  border-radius: 23px;
+  font-size: 0.9em;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: green;
+  -webkit-box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.75); }
+
+.content .btn-like {
+  background-color: green; }
+
+.content .btn-dislike {
+  background-color: red; }
+
+.content .btn-ok {
+  background-color: blue;
+  float: right; }

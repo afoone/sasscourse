@@ -1,0 +1,85 @@
+// Variables y funciones
+@import 'imports/variables19', 'imports/functions14';
+// Mixins
+@import 'imports/mixins14';
+ 
+// Estilos
+
+nav {
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;  
+        overflow: hidden;
+        @debug dark;
+        @if $dark {
+            background-color: #333;
+        } @else {
+            background-color: #eee;
+        }
+      }
+      
+      li {
+        float: left;
+      }
+      
+      li a {
+        display: block;
+        @if $dark {
+            color:  white;
+        } @else {
+            color:  darkblue;
+        }
+        
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      
+      /* Change the link color to #111 (black) on hover */
+      li a:hover {
+        @if $dark {
+            background-color: #111;
+        } @else {
+            background-color: #ccc;
+        }
+      }
+
+}
+
+.content {
+    .quote {
+        @include button_shadow($quote_shadow);
+        padding: map_get($quote_spaces, "padding");
+        margin:  map_get($quote_spaces, "margin");
+        background-color: $quote_background; 
+        text: {
+            align: center; 
+        }
+        h1 { 
+            color: $author_color; 
+            font: {
+                family: 'Lucida Sans', Verdana, sans-serif;
+                size: 1.5em;
+                variant: small-caps;
+                weight: 600;
+            }
+            a {
+                color: $author_color;
+                &:hover {
+                    color: darkgreen;
+                }
+            }
+        }
+        p {
+            color: complement($author_color);
+            font: {
+                style: italic;
+            }
+        }
+    }
+    @import 'imports/btns18';
+
+}
+
+

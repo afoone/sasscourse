@@ -1,0 +1,36 @@
+.quote {
+  -webkit-box-shadow: 10px 7px 18px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 7px 18px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 7px 18px 0px rgba(0, 0, 0, 0.75);
+  padding: 2.5em;
+  margin: 2.5em;
+  background-color: lightgrey;
+  text-align: center; }
+  .quote h1 {
+    color: brown;
+    font-family: 'Lucida Sans', Verdana, sans-serif;
+    font-size: 1.5em;
+    font-variant: small-caps;
+    font-weight: 600; }
+    .quote h1 a {
+      color: brown; }
+      .quote h1 a:hover {
+        color: darkgreen; }
+  .quote p {
+    font-style: italic; }
+  .quote .btn-like {
+    color: white;
+    width: 130px;
+    height: 40px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: green; }
+  .quote .btn-dislike {
+    color: white;
+    width: 130px;
+    height: 40px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: red; }

@@ -1,0 +1,10 @@
+.quote {
+  text-align: center; }
+  .quote h1 {
+    color: darkgrey; }
+    .quote h1 a {
+      color: darkgrey; }
+      .quote h1 a:hover {
+        color: darkgreen; }
+  .quote p {
+    font-style: italic; }

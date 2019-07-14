@@ -69,5 +69,10 @@
 
 ## Tarea 11
  - Hacer una función que calcule proporcionalmente el valor del alto en base al ancho que le pasemos y usarla para que nuestros botones siempre tengan la misma proporción sin necesidad de establecer más que el ancho del botón.
+ - Poner el width en una variable
+ - Cambiar el tamaño (width) a 180px para probar
+
+## Tarea 12 
+ - Hacer otra función para que el botón siempre sea de borde redondo (radio la mitad de la altura), cambiando el mixin para que acepte tan sólo el ancho y ya haga todo lo demás
 
 

@@ -1,21 +1,22 @@
-nav {
-  /* Change the link color to #111 (black) on hover */ }
-  nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #eee; }
-  nav li {
-    float: left; }
-  nav li a {
-    display: block;
-    color: darkblue;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none; }
-  nav li a:hover {
-    background-color: #ccc; }
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #eee; }
+
+nav li {
+  float: left; }
+
+nav li a {
+  display: block;
+  color: darkblue;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none; }
+
+nav li a:hover {
+  background-color: #ccc; }
 
 .content li:nth-child(3n + 1) {
   background-color: lightgray; }
